@@ -1,3 +1,8 @@
+#This script uses our file of raw data and filters only the information we need
+#for further analysis and saves it as a new file called filtered_data.
+
+#This code was written by Shira Zadok on December 18th, 2024.
+
 #### Creating Filtered Data: ----
 load("./raw_data.rdata")
 library(tidyverse)

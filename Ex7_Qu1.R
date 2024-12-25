@@ -2,6 +2,11 @@
 # Week 7
 # assignment by Shira Zadok, id 318958311
 
+#This script uses the total collected data from a stroop experiment and cleans it
+#to make is possible to use an raw data.
+
+#This code was written by Shira Zadok on December 18th, 2024.
+
 #### Creating Raw_Data ----
 library(dplyr)
 file_names <- dir("collected_data")

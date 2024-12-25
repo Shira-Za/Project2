@@ -1,3 +1,9 @@
+#This code is handling the descriptive statistics analysis of the stroop assignment.
+#It uses the filtered data to plot the results of accuracy and response time in the 
+#assignment. Finally, it calculates the linear regression model. 
+
+#This code was written by Shira Zadok on December 18th, 2024.
+
 #### Descriptive Statistics: ----
 load("./filtered_data.rdata")
 
@@ -35,6 +41,7 @@ p2 = ggplot(df, aes(x = task, y = rt, color = congruency)) +
   labs(title = "RT per Task", x = "Task", y = "RT (msec)") +
   theme_minimal()
 
+ggsave("Stroop_Results.png", plot = p1+p2, width = 8, height = 6, dpi = 300)
 
 #### Regression ----
 library(lme4)

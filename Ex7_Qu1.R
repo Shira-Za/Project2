@@ -4,11 +4,11 @@
 
 #### Creating Raw_Data ----
 library(dplyr)
-file_names <- dir("stroop_data")
+file_names <- dir("collected_data")
 
 df <- NULL
 for (file in file_names) {
-  temp_df <- read.csv(file.path("stroop_data", file))
+  temp_df <- read.csv(file.path("collected_data", file))
   df <- rbind(df, temp_df)
 }
 
